@@ -1,6 +1,6 @@
 ---
 name: pr
-description: "Use when writing a PR body."
+description: "Open or update a GitHub pull request when the user invokes /pr or asks to publish a PR; also use when explicitly asked to draft a PR body."
 metadata:
   credits:
     skill: show-me
@@ -8,6 +8,28 @@ metadata:
     organisation: Humanlayer
     url: "https://github.com/humanlayer/skills/blob/main/plugins/show-me/skills/show-me/SKILL.md"
 ---
+
+## Publication workflow
+
+An invocation of `/pr` authorizes publishing the task branch and opening the PR.
+Carry it through without another confirmation; return the GitHub PR URL rather
+than only a draft body. If the user explicitly requests draft text only, provide
+the body without publishing.
+
+Inspect status, remote tracking, recent commits, and the full diff from the base
+branch. Review every included commit, including prerequisite commits. Preserve
+unrelated changes and exclude secrets and personal learning records. If work is
+on the default branch, create a task branch at the intended commit before pushing.
+Use the task's isolated worktree when present. Commit only explicitly authorized
+pending work; ask only about genuinely ambiguous scope or blockers.
+
+Push the task branch with upstream tracking, then use `gh` to create a PR with an
+explicit head and base. If a PR already exists for that head/base, update it
+instead of creating a duplicate. Use the template below, describing all included
+changes and linking the originating ticket. Verify the resulting PR's head/base
+and URL. Leave merging to the user unless separately requested.
+
+## Body template
 
 Use this template for writing the PR body:
 
