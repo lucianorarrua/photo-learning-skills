@@ -21,7 +21,7 @@ Example requests:
 ## Design direction
 
 - **Configurable:** camera systems, lenses, language, experience, and goals belong to each user's configuration.
-- **Agent-portable:** target Claude Code, OpenCode, Codex, and other compatible agents, with client-specific setup guidance where necessary.
+- **Agent-portable:** target Claude Code, OpenCode, Codex, and Pi, with client-specific setup guidance where necessary.
 - **Learning-first:** teach transferable concepts rather than slider recipes or a single aesthetic.
 - **Context-aware:** use local Markdown configuration, progress summaries, and session notes, loading only what the current skill needs.
 - **LightCraft-backed:** reuse its MCP capabilities rather than building another editor or MCP server.
@@ -30,10 +30,12 @@ The setup-first pattern is inspired by [Matt Pocock's skills](https://github.com
 
 ## Status
 
-**Concept stage.** This repository currently contains only this README and the [project brief](BRIEF.md). There are no implemented skills, installers, integrations, or user configuration files yet.
+**Design and technical validation stage.** The [project brief](BRIEF.md) and [domain glossary](GLOSSARY.md) capture the agreed learning experience. A [live LightCraft validation report](docs/lightcraft-validation.md) records desktop image retrieval, a reversible demo adjustment, and detection of learner-operated adjustments on a real NEF. There are no implemented photo-learning skills or installers yet; engineering workflow skills are available for developing the project.
 
 LightCraft is an evolving alpha project. Its available MCP tools, camera compatibility, and rendering behavior must be checked against the installed version. Sharing skill content across agents does not guarantee identical tool or image support in every client/model combination.
 
 ## Next milestone
 
-Define the setup conversation and local context contract, then validate one short guided lesson with LightCraft's live application connection.
+Specify and implement the setup conversation and local learning context contract, then validate one short guided lesson and cross-session continuity. Validate each target client (OpenCode, Claude Code, Codex, and Pi) before declaring it supported.
+
+The [initial implementation specification](https://github.com/lucianorarrua/photo-learning-skills/issues/1) defines the learner-facing skills, context responsibilities, and acceptance criteria. Implementation tickets will be derived from that specification.
