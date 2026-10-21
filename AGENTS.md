@@ -11,6 +11,12 @@ Keep technical identifiers and quoted source text in their original language.
 
 ## Agent skills
 
+### Delivery workflows
+
+Before `/implement`, read `.agents/skills/implement/SKILL.md` for mandatory
+isolated-worktree setup. For `/pr`, read `.agents/skills/pr/SKILL.md` and follow
+its publication workflow through to a GitHub PR URL.
+
 ### Issue tracker
 
 Issues and specs live in GitHub Issues. Before reading or publishing
