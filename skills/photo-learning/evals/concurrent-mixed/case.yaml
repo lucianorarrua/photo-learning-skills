@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: concurrent-mixed
+expected_outcome: |
+  Detects changed baselines, preserves intervening learner edits, avoids blind
+  global undo or switching photos, offers scoped compensation only after clarified
+  agreement, treats matching values as insufficient history ownership, and records
+  interruption with uncertain outcomes before retrying.

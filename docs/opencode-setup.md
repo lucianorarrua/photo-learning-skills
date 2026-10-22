@@ -41,10 +41,12 @@ No root `AGENTS.md` adapter is needed in the tested version.
 
 After setup, ask **“Load photo-learning and help me practice one objective on my
 current photo. I will operate the controls.”** `/photo-learning` is also available
-where slash metadata is supported. This first lesson journey uses learner-operated
-controls: the tutor reads settings/previews, asks for predictions and explanations,
-and observes your manual adjustments. Agent-operated experiments remain a later
-milestone; the saved operation preference stays revisable.
+where slash metadata is supported. You can operate the controls, ask the agent to
+execute an agreed small experiment, or take mixed turns. The tutor names the next
+operator, checks current state before agent changes, then asks for observations,
+explanations and your decision. Change the operation preference during a lesson
+without losing progress. See [experiment validation](experiment-validation.md)
+for tested behavior and the limits of polling-based concurrent-change protection.
 
 At closure or interruption, the lesson writes `.photo-learning/progress.md` and a
 unique Markdown record under `.photo-learning/sessions/`. It summarizes the saved

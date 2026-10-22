@@ -30,12 +30,12 @@ The setup-first pattern is inspired by [Matt Pocock's skills](https://github.com
 
 ## Status
 
-**Learner-operated lessons.** Install `setup-photo-learning` and `photo-learning` together using the [OpenCode guide](docs/opencode-setup.md). Setup confirms a minimal profile and desktop/photo/image readiness; the lesson guides prediction, manual adjustment, observation, explanation, and decision. The shared [context contract](skills/setup-photo-learning/references/context.md) defines profile, compact progress, and detailed session records for fresh-conversation recovery. See [setup validation](docs/setup-validation.md) and [lesson validation](docs/lesson-validation.md) for observed results and remaining limits.
+**Agreed experiments with learner, agent, or mixed operation.** Install `setup-photo-learning` and `photo-learning` together using the [OpenCode guide](docs/opencode-setup.md). Setup confirms a minimal profile and desktop/photo/image readiness; the lesson guides prediction, bounded adjustment, observation, explanation, and decision. Agent turns use an [experiment protocol](skills/photo-learning/references/experiments.md) to recheck state and preserve intervening learner work. The shared [context contract](skills/setup-photo-learning/references/context.md) defines profile, compact progress, and detailed session records for fresh-conversation recovery. See [setup validation](docs/setup-validation.md), [learner-operation validation](docs/lesson-validation.md), and [experiment validation](docs/experiment-validation.md) for observed results and limits.
 
 LightCraft is an evolving alpha project. Its available MCP tools, camera compatibility, and rendering behavior must be checked against the installed version. Sharing skill content across agents does not guarantee identical tool or image support in every client/model combination.
 
 ## Next milestone
 
-Extend the learner-operated journey to agreed agent/mixed-operation experiments and validate each target client (OpenCode, Claude Code, Codex, and Pi) before declaring it supported.
+Validate each target client (OpenCode, Claude Code, Codex, and Pi) before declaring it supported, and extend live learner-participation evidence across operation preferences.
 
 The [initial implementation specification](https://github.com/lucianorarrua/photo-learning-skills/issues/1) defines the learner-facing skills, context responsibilities, and acceptance criteria. [Issue #2](https://github.com/lucianorarrua/photo-learning-skills/issues/2) covers the setup journey delivered here.

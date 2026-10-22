@@ -1,6 +1,6 @@
 ---
 name: photo-learning
-description: Practice intentional photo editing with the current LightCraft photo, review the reasoning behind an adjustment, or resume learning from saved evidence. Guide one objective through prediction, learner-operated adjustment, observation, explanation, and decision; save progress for a fresh conversation.
+description: Practice intentional photo editing with the current LightCraft photo, review an adjustment, or resume learning from saved evidence. Guide prediction, observation, explanation, and decision with learner, agent, or mixed operation; execute agreed small experiments while preserving intervening learner work and recoverable progress.
 metadata:
   opencode/slash: "true"
 ---
@@ -34,10 +34,15 @@ objective based on that intent, the visible photo, relevant evidence, and availa
 time. Agree the objective and who operates the next adjustment. Self-reported
 experience helps choose an opening question; observed understanding sets challenge.
 
-Use learner-operated controls for this journey. If the saved preference is agent
-or mixed operation, explain the implemented scope and ask whether the learner
-wants to operate this experiment; retain their saved preference unless they
-explicitly revise it. Do not silently take control or claim agent-operated support.
+Honor the operation preference: learner operates, agent executes agreed small
+experiments, or mixed turns. In mixed mode name who performs the **next adjustment**
+and the handoff signal. The learner always predicts, observes, explains and decides.
+Allow preference changes at any time without restarting the lesson or discarding
+evidence. Confirm whether a change is for this turn/session or the saved default;
+use setup's narrow profile reconciliation for a persistent change. Retain the
+current in-session preference even if saving fails, reporting that limitation.
+On recovery distinguish the saved default from a previous session-only preference
+or completed turn; confirm the new session's operator rather than replaying a handoff.
 
 Assign a stable lesson ID for this objective/photo pair, checking relevant pending
 entries before minting another. Multiple objectives on one photo are separate
@@ -45,16 +50,21 @@ lessons. The same objective on a different photo starts a new lesson; previous
 pending work never requires reopening the old image. Continue an existing lesson
 only when its photo/objective still match and the learner chooses to continue.
 
-Completion: learner agrees one objective, current photo, and learner operation.
+Completion: learner agrees one objective, current photo, and the next operator.
 
 ## 3. Run a controlled experiment
 
-1. **Predict.** With the current settings and preview as baseline, ask what one
-   small adjustment should change in a named image region and what it may cost
-   elsewhere. Agree the control and a useful comparison, not a universal recipe.
-2. **Adjust.** Ask the learner to operate LightCraft and signal when ready. Keep
-   this mode read-only: no setting, undo/reset, selection, view, file, export, or
-   metadata mutation. An explanation of a control is not authorization to use it.
+1. **Predict and agree.** With current full settings and an inspected preview as
+   baseline, ask what a small adjustment should change in a named region and what
+   it may cost elsewhere. Agree the supported control(s), bounded change and useful
+   comparison, not a universal recipe. Before an agent turn, read the
+   [experiment protocol](references/experiments.md); it governs discovery,
+   authorization, mutation, concurrent changes, revision and restoration.
+2. **Adjust.** Name the operator. On a learner turn ask them to operate LightCraft
+   and signal readiness; keep agent calls read-only, including selection/view and
+   undo. On an agent turn execute only the agreed small experiment under the
+   protocol. The agreement authorizes its bounded changes without repeated
+   slider-by-slider permission. A control explanation alone is not authorization.
 3. **Observe.** Re-read active identity and settings, retrieve a fresh direct
    LightCraft preview and inspect it, then recheck identity/settings as in readiness.
    Compare the stable before/after snapshots. These are polling snapshots, not a
@@ -66,8 +76,10 @@ Completion: learner agrees one objective, current photo, and learner operation.
    to superficial answers, demonstrated understanding, or difficulty; record hints
    actually given. Another experiment is useful only when it serves this objective.
 5. **Decide.** Ask whether the learner wants to retain, revise, or undo the result
-   and why it suits their intent. The learner performs any revision/undo. Refresh
-   settings and image before assessing that result too.
+   and why it suits their intent. Name who performs revision/undo; for an agent
+   turn follow the protocol's fresh checks and conflict branches. Refresh settings
+   and actually inspect the image before assessing that result too. A decision to
+   keep ends this experiment; it does not authorize a complete automatic edit.
 
 On a changed photo, pause attribution and confirm its identity and intent. Preserve
 the earlier lesson's partial evidence; offer a new lesson on the new photo. On
