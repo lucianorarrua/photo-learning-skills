@@ -1,0 +1,7 @@
+schema_version: "1.1"
+name: agreed-operation
+expected_outcome: |
+  Runs the authorized small experiment without repeated permission, observes and
+  asks for reasoning/decision, verifies safe restoration and distinguishes redo,
+  changes preference without losing evidence, names the mixed-mode operator, and
+  writes honest recoverable session/progress records using supplied simulations.

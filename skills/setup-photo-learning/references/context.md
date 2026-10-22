@@ -121,6 +121,12 @@ Create only when there is session evidence or an interruption to preserve. Inclu
 - **Experiment:** prediction, before/after settings or local snapshot references,
   changed controls, relevant capture times and image route/inspection, learner's
   retain/revise/undo decision. Mark unperformed steps explicitly.
+- **Operation and recovery:** preference and revisions (session-only or saved),
+  operator per turn, agreed scope, last verified identity/settings and any pending
+  or uncertain mutation. Capture intervening changes and the clarification used.
+  For restoration distinguish undo from targeted compensation, settings/preview
+  verification from history/redo state. Fresh recovery refreshes readiness and
+  agreement; a saved pending operation is never an instruction to replay it.
 - **Learner evidence:** specific observation and explanation in their own words
   (short quotation or faithful paraphrase); distinguish self-report, tutor
   explanation, and learner demonstration.
