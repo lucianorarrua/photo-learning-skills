@@ -30,12 +30,12 @@ The setup-first pattern is inspired by [Matt Pocock's skills](https://github.com
 
 ## Status
 
-**Setup implementation.** Install the collection-local `setup-photo-learning` skill using the [OpenCode guide](docs/opencode-setup.md). It confirms a minimal profile and checks desktop/photo/image readiness. Its [context contract](skills/setup-photo-learning/references/context.md) separates reusable instructions from personal records. See [setup validation](docs/setup-validation.md) for observed results and remaining limits. Guided lessons and cross-client validation are subsequent milestones.
+**Learner-operated lessons.** Install `setup-photo-learning` and `photo-learning` together using the [OpenCode guide](docs/opencode-setup.md). Setup confirms a minimal profile and desktop/photo/image readiness; the lesson guides prediction, manual adjustment, observation, explanation, and decision. The shared [context contract](skills/setup-photo-learning/references/context.md) defines profile, compact progress, and detailed session records for fresh-conversation recovery. See [setup validation](docs/setup-validation.md) and [lesson validation](docs/lesson-validation.md) for observed results and remaining limits.
 
 LightCraft is an evolving alpha project. Its available MCP tools, camera compatibility, and rendering behavior must be checked against the installed version. Sharing skill content across agents does not guarantee identical tool or image support in every client/model combination.
 
 ## Next milestone
 
-Implement one short guided lesson and validate cross-session learning continuity. Validate each target client (OpenCode, Claude Code, Codex, and Pi) before declaring it supported.
+Extend the learner-operated journey to agreed agent/mixed-operation experiments and validate each target client (OpenCode, Claude Code, Codex, and Pi) before declaring it supported.
 
 The [initial implementation specification](https://github.com/lucianorarrua/photo-learning-skills/issues/1) defines the learner-facing skills, context responsibilities, and acceptance criteria. [Issue #2](https://github.com/lucianorarrua/photo-learning-skills/issues/2) covers the setup journey delivered here.

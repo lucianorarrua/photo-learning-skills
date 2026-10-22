@@ -76,8 +76,11 @@ Save the readiness record defined in `context.md`. Show where the learner can
 view the image and ask them to confirm the intended library/photo and current
 appearance. Keep unconfirmed gates pending.
 
-Report profile and readiness outcomes separately. When ready, offer one brief
-practice objective based on the current photo and intent. A later lesson owns
+Report profile and readiness outcomes separately. When ready, offer the
+[photo-learning workflow](../photo-learning/SKILL.md) for one brief practice
+objective based on the current photo and intent; use its
+[teaching reference](../photo-learning/references/teaching.md) when discussing that
+practice. The lesson owns
 prediction, adjustments, explanation, and evidence of understanding; setup does
 not perform an automatic edit or manufacture progress. If blocked, give the
 smallest useful next action and resume that gate after it is resolved.

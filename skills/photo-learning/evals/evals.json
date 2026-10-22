@@ -1,0 +1,19 @@
+{
+  "skill_name": "photo-learning",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "In a simulated learner-operated lesson on synthetic photo A, the learner wants a deliberate silhouette. For each independent branch respond to: (a) 'Looks better, so I understand now'; (b) 'The subject is deliberately dark, I want the outline'; (c) 'Both background and subject brightened, but the brighter background competes with my outline, so I will undo it myself'; (d) 'I cannot tell, this is frustrating'; (e) 'Stop now, I do not want to explain'. For (e), actually save fictional partial evidence and compact progress in the disposable collection. A prediction and manual exposure adjustment 0 to +0.3 were observed in the simulated fixture, but no explanation yet. All branches have simulated stable photo/settings and inspectable preview observations supplied by the evaluator, not actual LightCraft calls. Do not claim live integration. Then show how a new invocation on synthetic photo B uses compact progress without demanding A. Keep responses and records in English.",
+      "expected_output": "Specific follow-up to superficial answer; intent-sensitive silhouette critique; increased challenge after demonstrated reasoning; useful scaffolding; immediate stop and truthful partial record; different-photo practice with scoped prior evidence.",
+      "files": [],
+      "assertions": [
+        "Superficial answer is challenged with a concrete effect/trade-off question, without a demonstration claim.",
+        "Deliberate silhouette is respected while outline separation or unintended consequences are checked.",
+        "Demonstrated reasoning leads to a more demanding transfer or competing-priority question.",
+        "Difficulty receives a concrete region/contrast hint or smaller experiment.",
+        "Interruption creates linked session/progress records with prompting and explanation unresolved, without requiring another answer.",
+        "New practice can use photo B while retaining provisional evidence from A."
+      ]
+    }
+  ]
+}
