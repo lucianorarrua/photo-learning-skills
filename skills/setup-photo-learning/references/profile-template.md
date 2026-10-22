@@ -22,7 +22,8 @@ this guidance from a new record. Unknown nonessential details do not block pract
 ## Environment
 
 - Client/model and LightCraft: unknown; see dated readiness checks.
-- Collection/context destination: unknown.
+- Confirmed collection root(s) and resolved complete-context destination: unknown.
+- Whole-context sharing confirmation, if applicable: unknown; retain each association.
 
 ## Equipment and formats
 

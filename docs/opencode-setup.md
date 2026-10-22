@@ -34,6 +34,9 @@ does not discover shared `.agents/skills/`, copy both complete sibling folders i
 `.opencode/skills/` instead and remove the duplicate installation. Check skill
 permissions and global name conflicts if absent.
 
+For updates, including linked installations and fresh-conversation verification,
+follow [Update reusable skills](../skills/setup-photo-learning/references/continuity.md#update-reusable-skills).
+
 Ask **“Load the setup-photo-learning skill and set up learning in this collection.”**
 The agent should call `skill` with that name. Versions supporting `opencode/slash`
 metadata also expose `/setup-photo-learning`; the explicit request is portable.
@@ -128,6 +131,10 @@ contexts, tracked files, and verification follow the
 [privacy gate](../skills/setup-photo-learning/references/context.md#privacy-gate-before-personal-writes).
 Ignore rules cannot remove tracked files. Keep private material outside the public
 project; public evaluation profiles are fictional.
+
+For profile corrections, independent/shared roots (including symlinks), or
+moved/deleted photos, follow the [continuity workflow](../skills/setup-photo-learning/references/continuity.md).
+Its organization branch handles explicit file tasks and learning-reference repair.
 
 ## References
 

@@ -22,6 +22,8 @@ sharing rules before accessing `.photo-learning/`.
 Read existing `profile.md` and `progress.md`, if present. Retrieve other records
 only when relevant. Summarize known preferences and ask only for missing
 essentials or requested corrections. Preserve manual notes and earlier records.
+For revisits, linked contexts, instruction updates, or explicit organization tasks,
+follow [continuity.md](references/continuity.md).
 
 Completion: one confirmed collection/context destination and existing preferences
 understood, or their absence established.
