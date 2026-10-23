@@ -17,6 +17,9 @@ load a referenced session only to resolve a relevant uncertainty or continue tha
 lesson. If `pending-progress.md` exists, read that small reconciliation index and
 repair its named records using the context contract before proposing duplicate
 practice. Prior chat and the full history are unnecessary.
+For a linked context, setup correction, instruction update, changed/unavailable
+photo, or explicit organization task, use the shared
+[continuity workflow](../setup-photo-learning/references/continuity.md).
 
 If essentials or storage confirmation are missing, invoke `setup-photo-learning`
 using its [setup workflow](../setup-photo-learning/SKILL.md). Preserve existing

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: context-continuity
+expected_outcome: |
+  Narrow confirmed profile corrections preserve manual content and history.
+  A third same-day session and one corrected compact outcome retain stable links.
+  Recovery uses saved evidence on B without requiring A or inventing readiness.

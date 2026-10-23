@@ -1,11 +1,13 @@
 # Collection learning context contract
 
 Paths are relative to the confirmed photo collection root, independently of
-installed skills. Each collection owns `.photo-learning/` by default. Resolve
-an existing symlink to its complete context and confirm the shared destination
-before reading/writing. Creating a link is optional, requires informed agreement,
-and must preserve an existing destination.
-Stop on a dangling link or ambiguous destination instead of creating another context.
+installed skills. Each collection owns `.photo-learning/` by default. Resolve the
+absolute root and the actual context destination before accessing records. An
+existing profile's confirmed association with that root can establish the choice;
+ask when missing or contradictory rather than reconfirming unchanged facts each
+session. Chat memory and the installed skill's directory do not choose a collection.
+For a linked context, setup revisit, skill update, or changed photo location, read
+[continuity.md](continuity.md) for destination and reconciliation rules.
 
 ## Storage and ownership
 
@@ -15,7 +17,7 @@ Stop on a dangling link or ambiguous destination instead of creating another con
 | `progress.md` | Setup and lessons, if present | Lessons: evidence, assistance, unproven points, next practice |
 | `readiness.md` | Setup and lessons as historical evidence | Setup or a fresh readiness check; update previous gate results |
 | `sessions/<unique-id>.md` | Only relevant details | Lessons; timestamp/topic plus suffix on collision |
-| `pending-progress.md` | If present, after profile/progress | Lessons: temporary links awaiting progress reconciliation |
+| `pending-progress.md` | If present, after profile/progress | Temporary record links awaiting evidence/reference reconciliation |
 | `topics/` | Only when relevant | Optional, lazy lesson notes |
 
 Installed skills are reusable instructions, never personal storage. Updates
@@ -104,6 +106,11 @@ objective. Merge repeated observations of the same lesson/outcome instead of
 appending duplicate progress. Keep each lesson bullet compact; details stay in
 sessions. Older entries may be compressed to a short evidence/remaining-practice
 summary with record links, preserving distinct evidence and unresolved work.
+When another session adds evidence to the same lesson, summarize the development
+and retain links to each supporting session (for example, earlier prompted
+recognition followed by a later independent explanation). The latest sample does
+not erase earlier assistance or turn it into independent evidence. A correction
+amends its existing sample; a new observed encounter gets a new session reference.
 
 ### Detailed session: `sessions/<unique-id>.md`
 
@@ -140,14 +147,17 @@ Create only when there is session evidence or an interruption to preserve. Inclu
 ### Read/write procedure
 
 1. Start with profile and compact progress, then read `pending-progress.md` if
-   present. This small index contains only session paths/IDs and lesson IDs awaiting
-   a compact-progress update, not a history copy. For each pending link, read that
+   present. This small index contains session paths/IDs and lesson IDs awaiting
+   a compact-progress update, or a verified-move reference-repair note, not a history
+   copy. For each pending link, read that
    named session and reconcile its entry using the existing IDs; an already matching
    entry needs no duplicate. Report a missing referenced record without inventing
    its evidence. Otherwise retrieve only the record linked to relevant evidence,
    an unresolved point, a correction, or a chosen continuation.
    A missing old photo or record does not block a new lesson; retain the available
    evidence and report the missing detail if needed.
+   A verified-move note uses the continuity workflow to repair references, never
+   to replay the file operation; clear it only after checking the repaired links.
 2. At closure/interruption apply the privacy gate, then re-read the destination
    records before narrow edits. Check for existing session/lesson IDs to preserve
    manual notes and avoid duplicate writes. A second session on the same day gets

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: reference-repair
+expected_outcome: |
+  Recovery reconciles a pending completed-move note without replaying the move,
+  retains historical evidence and stable links, and continues toward new B practice
+  after an explicit deleted-photo report without looking for A.
